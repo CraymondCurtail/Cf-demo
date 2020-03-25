@@ -6,7 +6,7 @@ applications:
   env:
     CONFIG_SERVER_PORT: 8082
     FRANK: 8100
-    PORT: 8099
+    #PORT: 8099
   stack: cflinuxfs3
   path: .
   buildpacks:
