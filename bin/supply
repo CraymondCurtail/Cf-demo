@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "-----> Installing config-server buildpack"
-
+echo "       \$CONFIG_SERVER_PORT: $CONFIG_SERVER_PORT"
 CONFIG_SERVER_PORT=8083
 BUILD_DIR=$1
 CACHE_DIR=$2
