@@ -9,6 +9,7 @@ echo "       \$CF_INSTANCE_PORT: $CF_INSTANCE_PORT"
 CONFIG_SERVER_PORT=8083
 FRANK=8101
 PORT=8800
+
 BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
@@ -20,6 +21,7 @@ echo "       \$ENV_DIR: $ENV_DIR"
 cat > $BUILD_DIR/config-server <<-SHELL
 #!/bin/bash
 
+PORT=8800
 echo "$CONFIG_SERVER_PORT"
 echo "$FRANK"
 echo "\$PORT: $PORT"
