@@ -5,10 +5,12 @@ applications:
   disk_quota: 512M
   env:
     CONFIG_SERVER_PORT: 8082
+    FRANK: 8100
   stack: cflinuxfs3
   path: .
   buildpacks:
-  - https://github.com/starkandwayne/part2-sidecar-buildpack
+  #- https://github.com/starkandwayne/part2-sidecar-buildpack
+  - https://github.com/CraymondCurtail/Cf-demo
   - ruby_buildpack
   sidecars:
   - name: config-server
