@@ -1,6 +1,7 @@
 #!/bin/bash
-echo $PORT
 
-$PORT = 8081
+echo $PORT1
 
-echo $PORT
+export PORT1="8081"
+
+echo $PORT1
