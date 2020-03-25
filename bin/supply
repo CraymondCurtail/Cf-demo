@@ -13,7 +13,7 @@ echo "       \$ENV_DIR: $ENV_DIR"
 cat > $BUILD_DIR/config-server <<-SHELL
 #!/bin/bash
 
-echo "Starting dummy config-server..."
+echo "WE ARE HERE RIGHT NOW AND Starting dummy config-server..."
 tail -f /dev/null
 SHELL
 
