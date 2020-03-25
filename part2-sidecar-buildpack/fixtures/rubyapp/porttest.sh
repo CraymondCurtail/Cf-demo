@@ -1,6 +1,6 @@
 #!/bin/bash
 echo $PORT
 
-PORT = 8081
+$PORT = 8081
 
 echo $PORT
