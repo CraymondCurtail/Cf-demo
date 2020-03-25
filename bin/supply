@@ -3,6 +3,8 @@
 echo "-----> Installing config-server buildpack"
 echo "       \$CONFIG_SERVER_PORT: $CONFIG_SERVER_PORT"
 echo "       \$FRANK: $FRANK"
+echo "       \$PORT: $PORT"
+echo "       \$CF_INSTANCE_PORT: $CF_INSTANCE_PORT"
 
 CONFIG_SERVER_PORT=8083
 FRANK=8101
@@ -19,6 +21,10 @@ cat > $BUILD_DIR/config-server <<-SHELL
 
 echo "$CONFIG_SERVER_PORT"
 echo "$FRANK"
+echo "\$PORT: $PORT"
+echo "\$CF_INSTANCE_PORT: $CF_INSTANCE_PORT"
+
+
 echo "WE ARE HERE RIGHT NOW AND Starting dummy config-server..."
 tail -f /dev/null
 SHELL
